@@ -1,52 +1,118 @@
-<div class="jumbotron bg-info ex2">
-  <div class="container-fluid text-center">
-    <div class="row">
-      <div class="col-md animate-reveal animate-first">
-        <p class="font-italic">Efectivos</p>
-        <p class="font-italic">bla bla bla</p>
-      </div>
-      <div class="col-md animate-reveal animate-second">
-        <p class="font-italic">Rapidos</p>
-        <p class="font-italic">bla bla bla</p>
-      </div>
-      <div class="col-md animate-reveal animate-third">
-        <p class="font-italic">Contacto 666 777 888</p>
-        <p class="font-italic">24 Horas</p>
+<div [ngClass]="checkSize() ? 'makeVisible' : 'makeGone'">
+  <div class="jumbotron bg-info ex2">
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-md animate-reveal animate-first">
+          <div class="alert alert-secondary" role="alert">
+            <img src="assets/images/si-glyph-ambulance.svg" class="img-fluid" />
+            <p class="font-italic">
+              Rapidez
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md animate-reveal animate-second">
+          <div class="alert alert-secondary" role="alert">
+            <img
+              src="assets/images/si-glyph-alarm-clock.svg"
+              class="img-fluid"
+            />
+            <p class="font-italic">
+              24 Horas
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md animate-reveal animate-third">
+          <div class="alert alert-secondary" role="alert">
+            <img
+              src="assets/images/si-glyph-customer-support.svg"
+              class="img-fluid"
+            />
+            <p class="font-italic">
+              666 777 888
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="ex1">
+<div [ngClass]="checkSize() ? 'makeGone' : 'makeVisible'">
+  <div class="jumbotron bg-info ex2">
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div *ngIf="showMe" class="col-md animate-reveal animate-first">
+          <div class="alert alert-secondary" role="alert">
+            <img src="assets/images/si-glyph-ambulance.svg" class="img-fluid" />
+            <p class="font-italic">
+              Rapidez
+            </p>
+          </div>
+        </div>
+
+        <div *ngIf="showMe" class="col-md animate-reveal animate-second">
+          <div class="alert alert-secondary" role="alert">
+            <img
+              src="assets/images/si-glyph-alarm-clock.svg"
+              class="img-fluid"
+            />
+            <p class="font-italic">
+              24 Horas
+            </p>
+          </div>
+        </div>
+        <div class="col-md animate-reveal animate-third">
+          <div class="alert alert-secondary" role="alert">
+            <img
+              src="assets/images/si-glyph-customer-support.svg"
+              class="img-fluid"
+            />
+            <p class="font-italic">
+              666 777 888
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="ex1">
   <img
     src="/assets/images/cerrajero.jpg"
     class="img-fluid"
     alt="Responsive image"
   />
-</div>
+</div> -->
 
-<div class="container text-center">
+<div class="container ">
   <div class="row">
     <div class="col-md">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+      <img
+        src="/assets/images/cerrajeria.jpg"
+        class="img-fluid"
+        alt="Responsive image"
+      />
+      <p class="font-italic">
+        Contamos con más de 10 años de experiencia ofreciendo un servicio de
+        calidad, siempre preocupados por satisfacer las necesidades de nuestros
+        clientes. Para nosostros es importante que nuestros clientes tengan la
+        seguridad y tranquilidad de que nuestro servicio es oportuno, ético y
+        profesional. Este mismo servicio que nos ha caracterizado hasta ahora,
+        lo proporcionamos al atender emergencias las 24 horas.
       </p>
     </div>
     <div class="col-md">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+      <span class="badge badge-pill badge-primary">{{ values.width }}</span>
+      <p class="font-italic">
+        Contamos con más de 10 años de experiencia ofreciendo un servicio de
+        calidad, siempre preocupados por satisfacer las necesidades de nuestros
+        clientes. Para nosostros es importante que nuestros clientes tengan la
+        seguridad y tranquilidad de que nuestro servicio es oportuno, ético y
+        profesional. Este mismo servicio que nos ha caracterizado hasta ahora,
+        lo proporcionamos al atender emergencias las 24 horas.
       </p>
     </div>
   </div>

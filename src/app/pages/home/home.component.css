@@ -10,52 +10,7 @@ mat-grid-tile {
 }
 
 /* ********************************* */
-span::before {
-  content: "Semos Buenos";
-  margin-top: 25px;
-  font-size: 21px;
-  text-align: center;
-  animation: fadein 6s;
-  -moz-animation: fadein 6s; /* Firefox */
-  -webkit-animation: fadein 4s; /* Safari and Chrome */
-  -o-animation: fadein 4s; /* Opera */
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  /* Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+/*       Delay Display               */
 /* ********************************* */
 
 .animate-reveal {
@@ -169,4 +124,23 @@ span::before {
 
 .ex2 {
   margin-top: -5px;
+}
+
+.alert {
+  width: auto;
+  height: 160px;
+}
+
+/* resize images */
+.alert img {
+  width: auto;
+  height: 80%;
+}
+
+.makeGone {
+  display: none;
+}
+
+.makeVisible {
+  display: inline;
 }
