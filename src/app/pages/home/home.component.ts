@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   private anyErrors: boolean;
   private finished: boolean;
   private subscription;
+  private timer;
   private showMe: boolean;
   // @Input() name: string;
 
@@ -26,6 +27,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
   ngOnDestroy() {
     this.subscription = null;
+    this.timer = null;
   }
 
   checkSize() {
@@ -33,7 +35,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     if (this.values.width > 767) {
       return true;
     } else {
-      setTimeout(() => {
+      this.timer = setTimeout(() => {
         this.showMe = false;
       }, 5500);
 

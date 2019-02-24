@@ -9,10 +9,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "dist"))); //since index.html in dist is static
+app.use(express.static(path.join(__dirname, "dist/isra1"))); //since index.html in dist is static
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist/index.html")); //send all requests to our page to dist
+  res.sendFile(path.join(__dirname, "dist/isra1/index.html")); //send all requests to our page to dist
 });
 
 const PORT = process.env.PORT || 4700;

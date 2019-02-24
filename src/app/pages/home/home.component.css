@@ -128,7 +128,7 @@ mat-grid-tile {
 
 .alert {
   width: auto;
-  height: 160px;
+  height: 180px;
 }
 
 /* resize images */
@@ -137,10 +137,29 @@ mat-grid-tile {
   height: 80%;
 }
 
+.alertMob {
+  width: auto;
+  height: 180px;
+}
+
+/* resize images */
+.alertMob img {
+  width: auto;
+  height: 80%;
+}
+
+.alertMob p {
+  color: #3c3737;
+}
+
 .makeGone {
   display: none;
 }
 
 .makeVisible {
   display: inline;
+}
+
+.makeTextSmaller {
+  font-size: 0.7em;
 }
