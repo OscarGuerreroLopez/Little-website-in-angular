@@ -1,82 +1,11 @@
 <div [ngClass]="checkSize() ? 'makeVisible' : 'makeGone'">
-  <div class="jumbotron bg-info ex2 text-center">
-    <div class="row">
-      <div class="col-md animate-reveal animate-first">
-        <div class="alert alert-secondary" role="alert">
-          <img src="assets/images/si-glyph-ambulance.svg" class="img-fluid" />
-          <p class="font-italic  makeTextSmaller">
-            Rapidez
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md animate-reveal animate-second">
-        <div class="alert alert-secondary" role="alert">
-          <img src="assets/images/si-glyph-alarm-clock.svg" class="img-fluid" />
-          <p class="font-italic  makeTextSmaller">
-            Servicio 24 Horas
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md animate-reveal animate-third">
-        <div class="alert alert-secondary" role="alert">
-          <img src="assets/images/si-glyph-old-phone.svg" class="img-fluid" />
-
-          <p class="font-italic makeTextSmaller">
-            Llamanos 666 777 888
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-normal-view></app-normal-view>
 </div>
 
 <div [ngClass]="checkSize() ? 'makeGone' : 'makeVisible'">
-  <div class="jumbotron bg-info ex2 text-center">
-    <div class="row">
-      <div *ngIf="showMe" class="col-md animate-reveal animate-first">
-        <div class="alertMob" role="alert">
-          <img src="assets/images/si-glyph-ambulance.svg" class="img-fluid" />
-          <p class="font-italic makeTextSmaller">
-            Rapidez
-          </p>
-        </div>
-      </div>
-
-      <div *ngIf="showMe" class="col-md animate-reveal animate-second">
-        <div class="alertMob" role="alert">
-          <img src="assets/images/si-glyph-alarm-clock.svg" class="img-fluid" />
-          <p class="font-italic makeTextSmaller">
-            Servicio 24 Horas
-          </p>
-        </div>
-      </div>
-      <div *ngIf="showMe" class="col-md animate-reveal animate-third">
-        <div class="alertMob" role="alert">
-          <img src="assets/images/si-glyph-old-phone.svg" class="img-fluid" />
-          <p class="font-italic makeTextSmaller">
-            Llamanos 666 777 888
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-mobile-view [(showMe)]="showMe"></app-mobile-view>
 </div>
 
-<!-- <div class="ex1">
-  <img
-    src="/assets/images/cerrajero.jpg"
-    class="img-fluid"
-    alt="Responsive image"
-  />
-</div> -->
-<div class="container text-center">
-  <button type="button" class="btn btn-info">
-    <i class="fas fa-phone"> Llamar ahora</i>
-  </button>
-  <br /><br />
-</div>
 <div class="container ">
   <div class="row">
     <div class="col-md">

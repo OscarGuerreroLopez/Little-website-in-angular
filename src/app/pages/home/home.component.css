@@ -1,3 +1,11 @@
+.makeGone {
+  display: none;
+}
+
+.makeVisible {
+  display: inline;
+}
+
 .centered {
   position: absolute;
   top: 50%;
@@ -150,14 +158,6 @@ mat-grid-tile {
 
 .alertMob p {
   color: #3c3737;
-}
-
-.makeGone {
-  display: none;
-}
-
-.makeVisible {
-  display: inline;
 }
 
 .makeTextSmaller {

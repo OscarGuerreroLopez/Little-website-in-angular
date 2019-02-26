@@ -33,11 +33,13 @@ export class HomeComponent implements OnInit, OnDestroy {
   checkSize() {
     //768 break pont for small devices
     if (this.values.width > 767) {
+      this.showMe = true;
+
       return true;
     } else {
       this.timer = setTimeout(() => {
         this.showMe = false;
-      }, 5500);
+      }, 6000);
 
       return false;
     }
