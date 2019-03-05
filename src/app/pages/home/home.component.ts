@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit, OnDestroy {
           this.isMobile = true;
           this.timer = setTimeout(() => {
             this.showMe = false;
-          }, 6000);
+          }, 5000);
         } else {
           this.isMobile = false;
         }

@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { AppRoutingModule } from '../app-routing.module';
-import { LayoutComponent } from './layout/layout.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {DemoMaterialModule} from '../material-module';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { AppRoutingModule } from "../app-routing.module";
+import { LayoutComponent } from "./layout/layout.component";
+import { HeaderComponent } from "./header/header.component";
+import { FooterComponent } from "./footer/footer.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { DemoMaterialModule } from "../material-module";
 
 @NgModule({
   declarations: [LayoutComponent, HeaderComponent, FooterComponent],
@@ -17,4 +17,4 @@ import {DemoMaterialModule} from '../material-module';
   ],
   exports: [LayoutComponent]
 })
-export class UiModule { }
+export class UiModule {}

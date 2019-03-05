@@ -1,3 +1,38 @@
-<p>
-  contact works!
-</p>
+<br />
+<form class="example-form center">
+  <mat-form-field class="example-full-width">
+    <!-- <textarea #txtarea matInput  [maxLength]="maxNo" (change)='txtAreaChange()' [placeholder]="label" [(ngModel)]='text'></textarea> -->
+    <input matInput placeholder="Nombre" [maxLength]="55" />
+  </mat-form-field>
+  <br /><br />
+  <mat-form-field class="example-full-width">
+    <input
+      matInput
+      placeholder="Email"
+      [formControl]="emailFormControl"
+      [maxLength]="55"
+    />
+    <mat-error
+      *ngIf="
+        emailFormControl.hasError('email') &&
+        !emailFormControl.hasError('required')
+      "
+    >
+      Introduzca un email valido
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      Email <strong>requerido</strong>
+    </mat-error>
+  </mat-form-field>
+  <br /><br />
+
+  <mat-form-field class="example-full-width">
+    <textarea
+      matInput
+      placeholder="Breve descripción"
+      matTextareaAutosize
+      matAutosizeMinRows="1"
+      matAutosizeMaxRows="5"
+    ></textarea>
+  </mat-form-field>
+</form>
