@@ -1,10 +1,5 @@
-<div [ngClass]="checkSize() ? 'makeVisible' : 'makeGone'">
-  <app-normal-view></app-normal-view>
-</div>
-
-<div [ngClass]="checkSize() ? 'makeGone' : 'makeVisible'">
-  <app-mobile-view [(showMe)]="showMe"></app-mobile-view>
-</div>
+<app-normal-view *ngIf="!isMobile"></app-normal-view>
+<app-mobile-view *ngIf="isMobile" [(showMe)]="showMe"></app-mobile-view>
 
 <div class="container ">
   <div class="row">
@@ -24,7 +19,6 @@
       </p>
     </div>
     <div class="col-md">
-      <span class="badge badge-pill badge-primary">{{ values.width }}</span>
       <p class="font-italic">
         Contamos con más de 10 años de experiencia ofreciendo un servicio de
         calidad, siempre preocupados por satisfacer las necesidades de nuestros

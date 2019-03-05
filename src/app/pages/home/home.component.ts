@@ -7,41 +7,35 @@ import { WindowService, WindowSize } from "../window.service";
   styleUrls: ["./home.component.css"]
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  private values: WindowSize;
   private anyErrors: boolean;
   private finished: boolean;
   private subscription;
   private timer;
-  private showMe: boolean;
+  private showMe = true;
+  private isMobile = false;
   // @Input() name: string;
 
   constructor(private windowService: WindowService) {}
 
   ngOnInit() {
     this.subscription = this.windowService.windowSizeChanged.subscribe(
-      value => (this.values = value),
+      value => {
+        value.width < 768 ? (this.isMobile = true) : (this.isMobile = false);
+        if (value.width < 768) {
+          this.isMobile = true;
+          this.timer = setTimeout(() => {
+            this.showMe = false;
+          }, 6000);
+        } else {
+          this.isMobile = false;
+        }
+      },
       error => (this.anyErrors = true),
       () => (this.finished = true)
     );
-    this.showMe = true;
   }
   ngOnDestroy() {
     this.subscription = null;
     this.timer = null;
-  }
-
-  checkSize() {
-    //768 break pont for small devices
-    if (this.values.width > 767) {
-      this.showMe = true;
-
-      return true;
-    } else {
-      this.timer = setTimeout(() => {
-        this.showMe = false;
-      }, 6000);
-
-      return false;
-    }
   }
 }
