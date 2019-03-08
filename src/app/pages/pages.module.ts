@@ -5,6 +5,7 @@ import { ContactComponent } from "./contact/contact.component";
 // import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { DemoMaterialModule } from "../material-module";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { ServiceWorkerModule } from "@angular/service-worker";
 
 import { WindowService } from "./window.service";
 

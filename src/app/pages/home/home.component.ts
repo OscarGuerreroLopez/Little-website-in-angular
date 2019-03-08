@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   private subscription;
   private timer;
   private showMe = true;
-  private isMobile = false;
+  isMobile = false;
   // @Input() name: string;
 
   constructor(private windowService: WindowService) {}
