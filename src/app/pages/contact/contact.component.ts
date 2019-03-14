@@ -13,8 +13,10 @@ export class ContactComponent implements OnInit {
     name: new FormControl("", [Validators.required]),
     email: new FormControl("", [Validators.email]),
     phone: new FormControl("", [phoneNumberValidator]),
-    text: new FormControl("")
+    text: new FormControl("", [Validators.required])
   });
+
+  showIt = true;
 
   name = new FormControl("");
 
@@ -25,9 +27,13 @@ export class ContactComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.showIt = true;
+  }
 
   handleSubmit() {
-    console.log(this.contactForm.value);
+    if (this.contactForm.value.email || this.contactForm.value.phone) {
+      this.showIt = false;
+    }
   }
 }

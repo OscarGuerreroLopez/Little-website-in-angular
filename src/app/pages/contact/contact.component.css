@@ -30,6 +30,13 @@
   border-radius: 15px;
 }
 
+.buttonSubmit:disabled,
+buttonSubmit[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 .message {
   margin: auto;
   width: 50%;
@@ -39,4 +46,8 @@
 
 .messageBody {
   color: red;
+}
+
+a {
+  color: blue;
 }

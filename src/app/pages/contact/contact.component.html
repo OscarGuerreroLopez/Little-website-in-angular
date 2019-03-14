@@ -1,6 +1,6 @@
 <br />
 
-<div class="message" *ngIf="!contactForm.valid">
+<div *ngIf="showIt" class="message">
   <h5 class="messageBody">
     Introduce tu nombre, telefono y/o correo y descripción
   </h5>
@@ -9,6 +9,7 @@
   class="example-form center"
   [formGroup]="contactForm"
   (ngSubmit)="handleSubmit()"
+  *ngIf="showIt"
 >
   <mat-form-field class="example-full-width">
     <input
@@ -59,3 +60,11 @@
     Enviar
   </button>
 </form>
+
+<div *ngIf="!showIt">
+  <h2>Gracias por su mensaje</h2>
+  <p>
+    <b>En breve contactaremos con usted. </b>
+  </p>
+  <p><a routerLink="">Volver a la pagina inicial</a></p>
+</div>
