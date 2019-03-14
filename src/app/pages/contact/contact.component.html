@@ -1,4 +1,10 @@
 <br />
+
+<div class="message" *ngIf="!contactForm.valid">
+  <h5 class="messageBody">
+    Introduce tu nombre, telefono y/o correo y descripción
+  </h5>
+</div>
 <form
   class="example-form center"
   [formGroup]="contactForm"
@@ -48,7 +54,8 @@
       formControlName="text"
     ></textarea>
   </mat-form-field>
-  <button class="btn btn-primary btn-block" [disabled]="!contactForm.valid">
-    Submit
+
+  <button class="buttonSubmit" [disabled]="!contactForm.valid">
+    Enviar
   </button>
 </form>

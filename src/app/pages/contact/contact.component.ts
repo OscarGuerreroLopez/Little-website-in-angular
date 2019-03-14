@@ -30,12 +30,4 @@ export class ContactComponent implements OnInit {
   handleSubmit() {
     console.log(this.contactForm.value);
   }
-
-  onClickSubmit() {
-    console.log(this.profileForm.value);
-  }
-
-  updateName() {
-    this.name.setValue("Nancy");
-  }
 }

@@ -10,7 +10,7 @@ export function phoneNumberValidator(
   } else {
     valid = true;
   }
-  console.log("xx " + valid);
+
   return valid
     ? null
     : { invalidNumber: { valid: false, value: control.value } };
