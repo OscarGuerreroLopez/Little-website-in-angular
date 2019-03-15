@@ -7,6 +7,7 @@ import { DemoMaterialModule } from "../material-module";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { WindowService } from "./window.service";
+import { EmailService } from "./email.service";
 
 import { PagesRoutingModule } from "./pages-routing.module";
 import { NormalViewComponent } from "./normal-view/normal-view.component";
@@ -27,6 +28,10 @@ import { MobileViewComponent } from "./mobile-view/mobile-view.component";
     ReactiveFormsModule
   ],
   exports: [HomeComponent],
-  providers: [{ provide: "windowObject", useValue: window }, WindowService]
+  providers: [
+    { provide: "windowObject", useValue: window },
+    WindowService,
+    EmailService
+  ]
 })
 export class PagesModule {}

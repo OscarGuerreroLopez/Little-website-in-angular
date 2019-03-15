@@ -18,13 +18,6 @@ export class ContactComponent implements OnInit {
 
   showIt = true;
 
-  name = new FormControl("");
-
-  profileForm = new FormGroup({
-    firstName: new FormControl(""),
-    lastName: new FormControl("")
-  });
-
   constructor() {}
 
   ngOnInit() {
