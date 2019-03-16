@@ -44,10 +44,24 @@ buttonSubmit[disabled] {
   padding: 10px;
 }
 
+.messageInit {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
 .messageBody {
   color: red;
 }
 
 a {
   color: blue;
+}
+
+.robot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
 }

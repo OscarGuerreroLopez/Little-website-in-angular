@@ -2,9 +2,47 @@ mat-divider {
   border-width: 2px;
   border-style: outset;
 }
+.brand {
+  width: 800px;
+  height: 120px;
+}
 
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 768px) {
   .brand {
     font-size: 0.8em;
+    width: 400px;
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .brand {
+    font-size: 0.8em;
+    width: 300px;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 403px) {
+  .brand {
+    font-size: 0.8em;
+    width: 250px;
+    height: 45px;
+  }
+}
+
+@media only screen and (max-width: 353px) {
+  .brand {
+    font-size: 0.8em;
+    width: 200px;
+    height: 45px;
+  }
+}
+
+@media only screen and (max-width: 303px) {
+  .brand {
+    font-size: 0.8em;
+    width: 150px;
+    height: 45px;
   }
 }

@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   private finished: boolean;
   private subscription;
   private timer;
-  private showMe = true;
+  showMe = true;
   isMobile = false;
   // @Input() name: string;
 

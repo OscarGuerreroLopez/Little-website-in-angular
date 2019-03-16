@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+
 import { HomeComponent } from "./home/home.component";
 import { ContactComponent } from "./contact/contact.component";
 // import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -12,13 +13,15 @@ import { EmailService } from "./email.service";
 import { PagesRoutingModule } from "./pages-routing.module";
 import { NormalViewComponent } from "./normal-view/normal-view.component";
 import { MobileViewComponent } from "./mobile-view/mobile-view.component";
+import { ServiciosComponent } from "./servicios/servicios.component";
 
 @NgModule({
   declarations: [
     HomeComponent,
     ContactComponent,
     NormalViewComponent,
-    MobileViewComponent
+    MobileViewComponent,
+    ServiciosComponent
   ],
   imports: [
     CommonModule,

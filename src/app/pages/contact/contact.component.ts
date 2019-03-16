@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, Input } from "@angular/core";
 import { FormControl, Validators, FormGroup } from "@angular/forms";
 import { phoneNumberValidator } from "./phone-validator";
+import { EmailService } from "../email.service";
 
 @Component({
   selector: "app-contact",
@@ -18,7 +19,7 @@ export class ContactComponent implements OnInit {
 
   showIt = true;
 
-  constructor() {}
+  constructor(private emailService: EmailService) {}
 
   ngOnInit() {
     this.showIt = true;
@@ -26,7 +27,15 @@ export class ContactComponent implements OnInit {
 
   handleSubmit() {
     if (this.contactForm.value.email || this.contactForm.value.phone) {
-      this.showIt = false;
+      this.emailService
+        .sendEmail(this.contactForm.value)
+        .then(resp => {
+          this.showIt = false;
+        })
+        .catch(err => {
+          console.log(err);
+          this.showIt = false; // delete for prod
+        });
     }
   }
 }

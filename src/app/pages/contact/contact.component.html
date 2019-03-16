@@ -1,4 +1,15 @@
-<br />
+<div *ngIf="showIt" class="messageInit">
+  <h5>
+    Puede contactornos al telefono
+    <a href="tel:+34 555-555-5555">
+      <span style="font-size: 2em;"><i class="fas fa-phone"></i></span> 666 777
+      888
+    </a>
+  </h5>
+  <p>O rellenando el siguiente formulario:</p>
+</div>
+
+<mat-divider></mat-divider>
 
 <div *ngIf="showIt" class="message">
   <h5 class="messageBody">
@@ -10,6 +21,7 @@
   [formGroup]="contactForm"
   (ngSubmit)="handleSubmit()"
   *ngIf="showIt"
+  id="demo-form"
 >
   <mat-form-field class="example-full-width">
     <input
