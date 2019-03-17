@@ -34,7 +34,7 @@ app.post("/email", (req, res) => {
   res.header("Content-Type", "application/json").send({ message: "received" });
 });
 
-const PORT = process.env.PORT || 4705;
+const PORT = process.env.PORT || 4706;
 
 app.listen(PORT, (req, res) => {
   console.log("Running on port " + PORT);

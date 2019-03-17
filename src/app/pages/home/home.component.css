@@ -131,7 +131,7 @@ mat-grid-tile {
 }
 
 .ex2 {
-  margin-top: -60px;
+  margin-top: -30px;
 }
 
 .alert {
@@ -152,7 +152,7 @@ mat-grid-tile {
 
 .alertMob {
   width: auto;
-  height: 180px;
+  height: 140px;
 }
 
 /* resize images */

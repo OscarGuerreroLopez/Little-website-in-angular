@@ -24,10 +24,11 @@ export class HomeComponent implements OnInit, OnDestroy {
         if (value.width < 768) {
           this.isMobile = true;
           this.timer = setTimeout(() => {
-            this.showMe = false;
+            this.showMe = false; // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
           }, 5000);
         } else {
           this.isMobile = false;
+          this.showMe = false;
         }
       },
       error => (this.anyErrors = true),

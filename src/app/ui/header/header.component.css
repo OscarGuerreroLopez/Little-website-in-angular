@@ -4,7 +4,11 @@ mat-divider {
 }
 .brand {
   width: 800px;
-  height: 120px;
+  height: 105px;
+}
+
+.nav-link {
+  font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 768px) {

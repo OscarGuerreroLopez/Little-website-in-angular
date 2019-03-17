@@ -1,5 +1,15 @@
 <app-normal-view *ngIf="!isMobile"></app-normal-view>
 <app-mobile-view *ngIf="isMobile" [(showMe)]="showMe"></app-mobile-view>
+<br />
+<div *ngIf="!showMe && isMobile" class="container text-center">
+  <a href="tel:+34 555-555-5555"
+    ><img
+      src="/assets/images/phone_number.png"
+      class="img-fluid"
+      alt="Cerrajeria"
+    />
+  </a>
+</div>
 
 <div class="container">
   <div class="row">
@@ -55,11 +65,12 @@
   </div>
 </div>
 
-<div *ngIf="!showMe" class="container text-center">
+<div *ngIf="!isMobile" class="container text-center">
   <a href="tel:+34 555-555-5555"
-    ><p>
-      <span style="font-size: 2em;"><i class="fas fa-phone"></i></span> 666 777
-      888
-    </p></a
-  >
+    ><img
+      src="/assets/images/phone_number.png"
+      class="img-fluid"
+      alt="Cerrajeria"
+    />
+  </a>
 </div>
