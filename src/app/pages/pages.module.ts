@@ -14,6 +14,7 @@ import { PagesRoutingModule } from "./pages-routing.module";
 import { NormalViewComponent } from "./normal-view/normal-view.component";
 import { MobileViewComponent } from "./mobile-view/mobile-view.component";
 import { ServiciosComponent } from "./servicios/servicios.component";
+import { ContactTopComponent } from "./contact/contact-top.component";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ServiciosComponent } from "./servicios/servicios.component";
     ContactComponent,
     NormalViewComponent,
     MobileViewComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    ContactTopComponent
   ],
   imports: [
     CommonModule,
