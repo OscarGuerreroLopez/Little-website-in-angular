@@ -2,7 +2,7 @@
 <app-mobile-view *ngIf="isMobile" [(showMe)]="showMe"></app-mobile-view>
 <br />
 <div *ngIf="!showMe && isMobile" class="container text-center">
-  <a href="tel:+34 555-555-5555"
+  <a href="tel:+34 651-074-590"
     ><img
       src="/assets/images/phone_number.png"
       class="img-fluid"
@@ -29,11 +29,14 @@
       </p>
     </div>
     <div class="col-md">
-      <img
-        src="/assets/images/locksmith.jpg"
-        class="img-fluid"
-        alt="Cerrajeria"
-      />
+      <a routerLink="/servicios">
+        <img
+          src="/assets/images/locksmith.jpg"
+          class="img-fluid"
+          alt="Cerrajeria"
+        />
+      </a>
+      <h3 class="text-center">Servicios:</h3>
       <p class="font-italic">
         Entre los servicios que ofrecemos son la instalación, reparación y
         sustitución de todo tipo de componentes de cerrajería así como; pomos,
@@ -44,6 +47,10 @@
         duplicado de llaves sencillas o forjadas, apertura de puertas de
         vehículo, puertas de garaje atascadas o candados de moto.
       </p>
+      <h5>
+        Visite la pagina de servicios para ver mas...
+        <a routerLink="/servicios">Servicios</a>
+      </h5>
     </div>
   </div>
 </div>
@@ -66,7 +73,7 @@
 </div>
 
 <div *ngIf="!isMobile" class="container text-center">
-  <a href="tel:+34 555-555-5555"
+  <a href="tel:+34 651-074-590"
     ><img
       src="/assets/images/phone_number.png"
       class="img-fluid"
