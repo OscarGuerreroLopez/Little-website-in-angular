@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { WindowService } from "./window.service";
 import { EmailService } from "./email.service";
+import { ServiceDetailService } from "./service-detail.service";
 
 import { PagesRoutingModule } from "./pages-routing.module";
 import { NormalViewComponent } from "./normal-view/normal-view.component";
@@ -38,7 +39,8 @@ import { ServiciosDetailComponent } from "./servicios-detail/servicios-detail.co
   providers: [
     { provide: "windowObject", useValue: window },
     WindowService,
-    EmailService
+    EmailService,
+    ServiceDetailService
   ]
 })
 export class PagesModule {}

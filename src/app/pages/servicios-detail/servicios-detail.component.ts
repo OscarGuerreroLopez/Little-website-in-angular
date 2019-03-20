@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
+
+import { ServiceDetailService } from "../service-detail.service";
+import { ServiceContent } from "../../types/interfaces";
 
 @Component({
   selector: "app-servicios-detail",
@@ -7,11 +9,11 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ["./servicios-detail.component.css"]
 })
 export class ServiciosDetailComponent implements OnInit {
-  param;
-  constructor(private route: ActivatedRoute) {}
+  content: ServiceContent;
+
+  constructor(private serviceDetailService: ServiceDetailService) {}
 
   ngOnInit() {
-    this.param = this.route.snapshot.paramMap["params"]["id"];
-    console.log(this.param);
+    this.content = this.serviceDetailService.getPage();
   }
 }

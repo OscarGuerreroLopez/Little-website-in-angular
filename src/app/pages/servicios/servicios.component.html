@@ -2,9 +2,12 @@
   <br />
   <img src="/assets/images/servicios.png" class="img-fluid" alt="Cerrajeria" />
 
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-sm pointer" (click)="showDetails('lostkeys')">
+      <div
+        class="col-sm pointer border border-dark"
+        (click)="showDetails('LostKeys')"
+      >
         <span style="font-size: 2em;"> <i class="fas fa-key"></i></span>
 
         <h5>Perdida de llaves:</h5>
@@ -17,7 +20,10 @@
           Mas informacion...
         </p>
       </div>
-      <div class="col-sm">
+      <div
+        class="col-sm pointer border border-dark"
+        (click)="showDetails('Openings')"
+      >
         <span style="font-size: 2em;"> <i class="fas fa-door-open"></i></span>
 
         <h5>Aperturas:</h5>
@@ -27,14 +33,79 @@
           operativas. También abrimos vehículos, cajas fuertes y otros tipos de
           cerraduras.
         </p>
+        <p class="pointerColor">
+          Mas informacion...
+        </p>
       </div>
-      <div class="col-sm">
+      <div
+        class="col-sm pointer border border-dark"
+        (click)="showDetails('Locks')"
+      >
         <span style="font-size: 2em;"> <i class="fas fa-screwdriver"></i></span>
 
         <h5>Cambio de cerraduras:</h5>
         <p>
           Disponemos del mejor equipo para poder realizar cambios de cerradura
           en el momento.
+        </p>
+        <p class="pointerColor">
+          Mas informacion...
+        </p>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-sm pointer border border-dark"
+        (click)="showDetails('ShopBlinds')"
+      >
+        <span style="font-size: 2em;"> <i class="fas fa-store"></i></span>
+
+        <h5>Persianas de local y cierres:</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum
+          totam quidem reiciendis similique id voluptas ex aperiam minus fugiat
+          veniam maxime est necessitatibus, provident perspiciatis, aliquam
+          doloribus, cum hic?
+        </p>
+        <p class="pointerColor">
+          Mas informacion...
+        </p>
+      </div>
+      <div
+        class="col-sm pointer border border-dark"
+        (click)="showDetails('FamilyDoor')"
+      >
+        <span style="font-size: 2em;"> <i class="fas fa-home"></i></span>
+
+        <h5>Puertas seccionales de vivienda unifamiliar:</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum
+          totam quidem reiciendis similique id voluptas ex aperiam minus fugiat
+          veniam maxime est necessitatibus, provident perspiciatis, aliquam
+          doloribus, cum hic?
+        </p>
+        <p class="pointerColor">
+          Mas informacion...
+        </p>
+      </div>
+      <div
+        class="col-sm pointer border border-dark"
+        (click)="showDetails('HomeBlinds')"
+      >
+        <span style="font-size: 2em;"> <i class="fas fa-hotel"></i></span>
+
+        <h5>Persianas:</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque earum
+          totam quidem reiciendis similique id voluptas ex aperiam minus fugiat
+          veniam maxime est necessitatibus, provident perspiciatis, aliquam
+          doloribus, cum hic?
+        </p>
+        <p class="pointerColor">
+          Mas informacion...
         </p>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { ServiceDetailService } from "../service-detail.service";
 
 @Component({
   selector: "app-servicios",
@@ -7,11 +8,15 @@ import { Router } from "@angular/router";
   styleUrls: ["./servicios.component.css"]
 })
 export class ServiciosComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private serviceDetailService: ServiceDetailService
+  ) {}
 
   ngOnInit() {}
 
   showDetails(page) {
-    this.router.navigate(["/serviciosdetail", page]);
+    this.serviceDetailService.selectedPage(page);
+    this.router.navigate(["/serviciosdetail"]);
   }
 }
