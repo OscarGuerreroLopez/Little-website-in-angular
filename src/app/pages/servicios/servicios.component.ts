@@ -20,8 +20,6 @@ export class ServiciosComponent implements OnInit {
   ngOnInit() {
     this.services = Object.keys(this.serviceDetailService.getAllServices());
     this.details = ServiceDetails;
-    console.log(this.services);
-    console.log(this.details["Locks"].title);
   }
 
   showDetails(page) {

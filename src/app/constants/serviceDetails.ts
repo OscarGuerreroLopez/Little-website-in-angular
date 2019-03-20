@@ -3,8 +3,10 @@ export const ServiceDetails = {
     title: "Perdida de llaves",
     shortDescription:
       "Servicio de urgencia el cual le permitirá volver a entrar a su domicilio rapidamente",
-    description1: "Perdida de llaves bla bla bla",
-    description2: "Perdida de llaves bla bla bla",
+    description1:
+      "Servicio de urgencia el cual le permitirá volver a entrar a su domicilio rapidamente.",
+    description2:
+      "Se ofrecerá la posibilidad de cambiar la cerradura para su mayor tranquilidad.",
     photo: "perdida.jpg",
     icon: "fas fa-key"
   },
