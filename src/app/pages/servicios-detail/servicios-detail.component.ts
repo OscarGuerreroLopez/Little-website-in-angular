@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 import { ServiceDetailService } from "../service-detail.service";
-import { ServiceContent } from "../../types/interfaces";
+import { IServiceContent } from "../../types/interfaces";
 
 @Component({
   selector: "app-servicios-detail",
@@ -9,7 +9,7 @@ import { ServiceContent } from "../../types/interfaces";
   styleUrls: ["./servicios-detail.component.css"]
 })
 export class ServiciosDetailComponent implements OnInit {
-  content: ServiceContent;
+  content: IServiceContent;
 
   constructor(private serviceDetailService: ServiceDetailService) {}
 
