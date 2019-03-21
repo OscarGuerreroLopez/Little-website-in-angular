@@ -25,10 +25,6 @@ export class ContactComponent implements OnInit, DoCheck {
     this.showIt = true;
   }
 
-  ngDoCheck() {
-    console.log(this.contactForm.hasError);
-  }
-
   handleSubmit() {
     if (this.contactForm.value.email || this.contactForm.value.phone) {
       this.emailService

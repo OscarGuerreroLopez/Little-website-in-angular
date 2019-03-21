@@ -32,7 +32,7 @@
       formControlName="phone"
       [maxLength]="18"
     />
-    <mat-error *ngIf="contactForm.hasError('invalidNumber')">
+    <mat-error *ngIf="!contactForm.hasError('invalidNumber')">
       Introduzca un telefono valido
     </mat-error>
   </mat-form-field>
@@ -44,7 +44,7 @@
       [maxLength]="55"
       formControlName="email"
     />
-    <mat-error *ngIf="contactForm.hasError('email')">
+    <mat-error *ngIf="!contactForm.hasError('email')">
       Introduzca un email valido
     </mat-error>
   </mat-form-field>
