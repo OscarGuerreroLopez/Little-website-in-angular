@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, DoCheck } from "@angular/core";
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { FormControl, Validators, FormGroup } from "@angular/forms";
 import { phoneNumberValidator } from "./phone-validator";
 import { EmailService } from "../email.service";
@@ -9,7 +9,7 @@ import { EmailService } from "../email.service";
   styleUrls: ["./contact.component.css"],
   encapsulation: ViewEncapsulation.ShadowDom
 })
-export class ContactComponent implements OnInit, DoCheck {
+export class ContactComponent implements OnInit {
   contactForm = new FormGroup({
     name: new FormControl("", [Validators.required]),
     email: new FormControl("", [Validators.email]),
