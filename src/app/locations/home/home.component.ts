@@ -1,5 +1,7 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
 import { ISubscription } from "rxjs/Subscription";
+import { Title, Meta } from "@angular/platform-browser";
+
 import { LocationService } from "../location.service";
 
 @Component({
@@ -13,7 +15,11 @@ export class HomeComponent implements OnInit, OnDestroy {
   private locationSubscribe: ISubscription;
   showLocation = false;
 
-  constructor(private locationService: LocationService) {}
+  constructor(
+    private locationService: LocationService,
+    private titleService: Title,
+    private metaTagService: Meta
+  ) {}
 
   ngOnInit() {
     this.showLocation = false;
@@ -24,23 +30,21 @@ export class HomeComponent implements OnInit, OnDestroy {
         this.showLocation = true;
       }
     );
+
+    this.titleService.setTitle("Cerrajeros Alicante");
+    this.metaTagService.updateTag({
+      name: "description",
+      content: "Cerrajeros Alicante"
+    });
+    this.metaTagService.updateTag({
+      name: "Cerrajero Localidades",
+      content: "Cerrajeros Alicante"
+    });
+    // TODO: Make Other top-level components do this so the above content doesn't get stuck there!
   }
 
   locationSelected(location) {
     this.locationService.selectedLocation(location);
-    // const el = document.getElementById(location);
-    // console.log(window.pageYOffset);
-
-    // console.log(el.getBoundingClientRect());
-    // const pos = el.getBoundingClientRect();
-    // console.log(window.innerHeight);
-    // const ande = window.innerHeight + pos.height;
-    // console.log(ande);
-    // el.scrollIntoView({
-    //   behavior: "smooth",
-    //   block: "nearest",
-    //   inline: "nearest"
-    // });
   }
 
   ngOnDestroy() {
