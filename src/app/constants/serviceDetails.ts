@@ -14,7 +14,8 @@ export const ServiceDetails = {
     title: "Aperturas",
     shortDescription:
       "Abrimos cualquier tipo de cerradura: puertas normales, incluso las blindadas y acorazadas.",
-    description1: "Aperturas bla bla bla",
+    description1: "Aperturas sin roturas en el 90% de los casos.",
+    description2: "Sustitucion de la cerradura para asegurar su vivienda",
     photo: "apertura.jpg",
     icon: "fas fa-door-open"
   },
@@ -22,23 +23,24 @@ export const ServiceDetails = {
     title: "Cambio de cerraduras",
     shortDescription:
       "Disponemos del mejor equipo para poder realizar cambios de cerradura en el momento.",
-    description1: "Cambio de cerraduras bla bla bla",
+    description1: "Cambio de cerraduras de manera rapida y limpia",
     photo: "cambio.jpg",
     icon: "fas fa-screwdriver"
   },
   ShopBlinds: {
     title: "Persianas de local y cierres",
     shortDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    description1: "Persianas de local y cierres bla bla bla",
+      "Somos especialistas en cierres de seguridad para locales",
+    description1: "Persianas de local y cierres",
+    description2: "Somos especialistas en cierres de seguridad para locales",
     photo: "persianaLocal.jpg",
     icon: "fas fa-store"
   },
   FamilyDoor: {
     title: "Puertas de vivienda unifamiliar",
-    shortDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    description1: "Puertas de vivienda unifamiliar bla bla bla",
+    shortDescription: "Tanto puertas principales como seccionales",
+    description1:
+      "Puertas de vivienda unifamiliar principales como seccionales",
     photo: "puertaSeccional.jpg",
     icon: "fas fa-home"
   },
