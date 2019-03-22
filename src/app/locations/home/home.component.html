@@ -1,0 +1,142 @@
+<!-- <div class="container text-center">
+  <br />
+  <h2>Poblaciones con cobertura:</h2>
+  <br />
+  <p>Pincha en una localidad para ver mas detalles</p>
+
+  <ul class="list-group">
+    <li
+      *ngFor="let locationItem of locationList"
+      class="list-group-item list-group-item-action pointer"
+      (click)="locationSelected(locationItem)"
+      id="{{ locationItem }}"
+    >
+      <b>{{ locationItem }}</b>
+
+      <div
+        *ngIf="showLocation && locationItem === location"
+        class="container text-center"
+      >
+        <p>
+          En cerrajeros {{ location }} realizamos una gran variedad de
+          servicios, con la máxima urgencia.
+        </p>
+        <p>
+          Cerrajeros urgentes en toda la zona de {{ location }}. No importa la
+          hora, ni en el que te encuentres, estaremos ahí en menos tiempo de lo
+          acordado. Trabajamos los 365 días del año.
+        </p>
+        <p>
+          <b><a routerLink="/servicios">Consulta nuestros servicios</a></b>
+        </p>
+        <p>
+          <b
+            >A precio asequibles y servicios 24 horas para todo tipo de
+            urgencias.</b
+          >
+        </p>
+        <p>
+          No dudes en contactarnos sin compromiso, pincha en
+          <b><a routerLink="/contact">Contacto</a></b> o llámanos al 651 074
+          590. Le atenderemos en la mayor brevedad posible.
+        </p>
+      </div>
+    </li>
+  </ul>
+</div> 
+<div
+  *ngFor="let locationItem of locationList; let i = index"
+  class="accordion"
+  id="accordionExample"
+>
+  <div class="card">
+    <div class="card-header" id="heading{{ i }}">
+      <h2 class="mb-0">
+        <button
+          class="btn btn-link collapsed"
+          type="button"
+          data-toggle="collapse"
+          [attr.data-target]="'#' + 'heading' + i"
+          aria-expanded="false"
+          [attr.aria-controls]="'heading' + i"
+        >
+          {{ locationItem }}
+        </button>
+      </h2>
+    </div>
+    <div
+      id="heading{{ i }}"
+      class="collapse"
+      [attr.aria-labelledby]="'heading' + i"
+      data-parent="#accordionExample"
+    >
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+        beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+        haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+<br /><br />
+<p>2222222222222222222222222222222222222222</p>
+
+-->
+<div class="container text-center">
+  <br />
+  <h2>Poblaciones con cobertura:</h2>
+  <br /><br />
+</div>
+<div
+  *ngFor="let locationItem of locationList; let i = index"
+  class="container text-center"
+>
+  <a
+    class="breadcrumb justify-content-center size"
+    data-toggle="collapse"
+    [attr.href]="'#' + 'heading' + i"
+    role="button"
+    aria-expanded="false"
+    [attr.aria-controls]="'heading' + i"
+  >
+    {{ locationItem }}</a
+  >
+
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="heading{{ i }}">
+        <div class="card card-body">
+          <p>
+            En cerrajeros {{ locationItem }} realizamos una gran variedad de
+            servicios, con la máxima urgencia.
+          </p>
+          <p>
+            Cerrajeros urgentes en toda la zona de {{ locationItem }}. No
+            importa la hora, ni en el que te encuentres, estaremos ahí en menos
+            tiempo de lo acordado. Trabajamos los 365 días del año.
+          </p>
+          <p>
+            <b><a routerLink="/servicios">Consulta nuestros servicios</a></b>
+          </p>
+          <p>
+            <b
+              >A precio asequibles y servicios 24 horas para todo tipo de
+              urgencias.</b
+            >
+          </p>
+          <p>
+            No dudes en contactarnos sin compromiso, pincha en
+            <b><a routerLink="/contact">Contacto</a></b> o llámanos al 651 074
+            590. Le atenderemos en la mayor brevedad posible.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
