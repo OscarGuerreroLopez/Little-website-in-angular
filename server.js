@@ -7,6 +7,8 @@ var cors = require("cors");
 var compression = require("compression");
 var https = require("https");
 
+const sendEmail = require("./sendEmail").sendEmail;
+
 const app = express();
 const certOptions = {
   key: fs.readFileSync(
@@ -28,11 +30,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist/isra1/index.html")); //send all requests to our page to dist
 });
 
-app.post("/email", (req, res) => {
-  console.log(req.body);
-
-  res.header("Content-Type", "application/json").send({ message: "received" });
-});
+app.post("/email", sendEmail);
 
 const PORT = process.env.PORT || 4706;
 
