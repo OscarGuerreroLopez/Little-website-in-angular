@@ -12,7 +12,7 @@ export class LocationService {
   constructor() {}
 
   getAllLocations(): string[] {
-    return locations;
+    return locations.sort();
   }
 
   selectedLocation(location) {

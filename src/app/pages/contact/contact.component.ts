@@ -45,6 +45,7 @@ export class ContactComponent implements OnInit {
       this.emailService
         .sendEmail(this.contactForm.value)
         .then(resp => {
+          console.log(resp);
           this.showIt = false;
         })
         .catch(err => {

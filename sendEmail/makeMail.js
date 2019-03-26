@@ -22,7 +22,8 @@ const makeMail = (name, phone, email, text) => {
 
     var mailOptions = {
       from: process.env.emailuser,
-      to: [process.env.email, process.env.emailIsra],
+      // to: [process.env.email, process.env.emailIsra],
+      to: [process.env.email],
       subject: "Contacto desde la pagina web nueva",
       text: emailForm
     };

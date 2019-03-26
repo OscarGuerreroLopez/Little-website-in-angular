@@ -88,7 +88,7 @@
 <p>2222222222222222222222222222222222222222</p>
 
 -->
-<div class="container text-center">
+<!-- <div class="container text-center">
   <br />
   <h2>Poblaciones con cobertura:</h2>
   <br /><br />
@@ -139,4 +139,22 @@
       </div>
     </div>
   </div>
+</div> -->
+
+<div class="container text-center">
+  <br />
+  <h2>Poblaciones con cobertura:</h2>
+  <br /><br />
+</div>
+<div
+  *ngFor="let locationItem of locationList; let i = index"
+  class="container text-center list-group"
+>
+  <h4>
+    <a
+      [routerLink]="['cerrajero', locationItem]"
+      class="list-group-item list-group-item-action"
+      >Cerrajeros <b> {{ locationItem }} </b></a
+    >
+  </h4>
 </div>
