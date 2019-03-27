@@ -31,16 +31,16 @@ export const ServiceDetails = {
     title: "Persianas de local y cierres",
     shortDescription:
       "Somos especialistas en cierres de seguridad para locales",
-    description1: "Persianas de local y cierres",
+    description1:
+      "Persianas enrrollables, seccionales, correderas y abatibles de local",
     description2: "Somos especialistas en cierres de seguridad para locales",
     photo: "persianaLocal.jpg",
     icon: "fas fa-store"
   },
   FamilyDoor: {
     title: "Puertas de vivienda unifamiliar",
-    shortDescription: "Tanto puertas principales como seccionales",
-    description1:
-      "Puertas de vivienda unifamiliar principales como seccionales",
+    shortDescription: "Tanto puertas principales como secundarias",
+    description1: "Puertas de vivienda unifamiliar seccionales y autonómicas",
     photo: "puertaSeccional.jpg",
     icon: "fas fa-home"
   },

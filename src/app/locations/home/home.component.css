@@ -5,3 +5,7 @@
 .size {
   font-size: 26px;
 }
+.centerBlock {
+  display: block;
+  margin: 0 auto;
+}
