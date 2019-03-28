@@ -37,7 +37,6 @@ export class ContactComponent implements OnInit {
       name: "Cerrajero Localidades",
       content: "Cerrajeros Alicante"
     });
-    // TODO: Make Other top-level components do this so the above content doesn't get stuck there!
   }
 
   handleSubmit() {

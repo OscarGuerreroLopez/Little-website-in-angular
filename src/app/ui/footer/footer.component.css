@@ -1,0 +1,23 @@
+@media only screen and (max-width: 768px) {
+  .space {
+    bottom: 45px;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .space {
+    bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .space {
+    bottom: 38px;
+  }
+}
+
+@media only screen and (max-width: 358px) {
+  .space {
+    bottom: 35px;
+  }
+}

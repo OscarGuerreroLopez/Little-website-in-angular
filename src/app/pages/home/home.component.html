@@ -19,7 +19,7 @@
         lo proporcionamos al atender emergencias las 24 horas.
       </p>
     </div>
-    <div *ngIf="!showMe && isMobile" class="container lefty">
+    <!-- <div *ngIf="!showMe && isMobile" class="container lefty">
       <a href="tel:+34 651-074-590"
         ><img
           src="/assets/images/phone_number.png"
@@ -28,7 +28,7 @@
         />
       </a>
       <br /><br />
-    </div>
+    </div> -->
 
     <div class="col-md">
       <a routerLink="/servicios">
@@ -75,7 +75,7 @@
   </div>
 </div>
 
-<div class="container text-center">
+<div *ngIf="!isMobile" class="container text-center">
   <a href="tel:+34 651-074-590"
     ><img
       src="/assets/images/phone_number_2.png"

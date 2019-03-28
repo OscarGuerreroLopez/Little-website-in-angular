@@ -7,7 +7,7 @@ import { ContactComponent } from "./contact/contact.component";
 import { DemoMaterialModule } from "../material-module";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
-import { WindowService } from "./window.service";
+import { WindowService } from "../window.service";
 import { EmailService } from "./email.service";
 import { ServiceDetailService } from "./service-detail.service";
 

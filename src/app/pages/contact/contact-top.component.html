@@ -1,4 +1,4 @@
-<div class="container text-center">
+<div *ngIf="!isMobile" class="container text-center">
   <a href="tel:+34651074590"
     ><img
       src="/assets/images/phone_number_2.png"
@@ -6,7 +6,26 @@
       alt="Cerrajeria"
     />
   </a>
+  <div class="container text-center">
+    <img src="/assets/images/arrow_2.png" class="img-fluid" alt="Cerrajeria" />
+  </div>
 </div>
-<div class="container text-center">
-  <img src="/assets/images/arrow_2.png" class="img-fluid" alt="Cerrajeria" />
+
+<div *ngIf="isMobile">
+  <img
+    src="/assets/images/contactillo.png"
+    class="img-fluid"
+    alt="Cerrajeria"
+  />
 </div>
+
+<!-- <div *ngIf="isMobile" class="text-center">
+  <h5>
+    Puede llamarnos pinchando sobre el telefono que se muestra en la parte baja
+  </h5>
+
+  <h5>
+    O si lo prefiere puede rellenar el siguiente formulario y le contactaremos a
+    la mayor brevedad posible
+  </h5>
+</div> -->

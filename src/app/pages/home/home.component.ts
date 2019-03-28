@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
-import { WindowService, WindowSize } from "../window.service";
+import { WindowService } from "../../window.service";
 
 @Component({
   selector: "app-home",
