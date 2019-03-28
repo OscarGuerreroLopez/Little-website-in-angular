@@ -38,14 +38,14 @@ export const ServiceDetails = {
     icon: "fas fa-store"
   },
   FamilyDoor: {
-    title: "Puertas de vivienda unifamiliar",
-    shortDescription: "Tanto puertas principales como secundarias",
-    description1: "Puertas de vivienda unifamiliar seccionales y autonómicas",
+    title: "Automatismos",
+    shortDescription: "Puertas seccionales autonómicas",
+    description1: "Automatismos seccionales y automaticos",
     photo: "puertaSeccional.jpg",
     icon: "fas fa-home"
   },
   HomeBlinds: {
-    title: "Persianas",
+    title: "Persianas de hogar",
     shortDescription:
       "Reparamos e instalamos todo tipo de persianas para el hogar",
     description1: "Reparamos e instalamos todo tipo de persianas para el hogar",

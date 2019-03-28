@@ -168,3 +168,7 @@ mat-grid-tile {
 .makeTextSmaller {
   font-size: 0.7em;
 }
+
+.lefty {
+  margin-left: 30px;
+}

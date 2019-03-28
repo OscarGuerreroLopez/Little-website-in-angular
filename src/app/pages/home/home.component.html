@@ -1,15 +1,6 @@
 <app-normal-view *ngIf="!isMobile"></app-normal-view>
 <app-mobile-view *ngIf="isMobile" [(showMe)]="showMe"></app-mobile-view>
 <br />
-<div *ngIf="!showMe && isMobile" class="container text-center">
-  <a href="tel:+34 651-074-590"
-    ><img
-      src="/assets/images/phone_number.png"
-      class="img-fluid"
-      alt="Cerrajeria"
-    />
-  </a>
-</div>
 
 <div class="container">
   <div class="row">
@@ -28,6 +19,17 @@
         lo proporcionamos al atender emergencias las 24 horas.
       </p>
     </div>
+    <div *ngIf="!showMe && isMobile" class="container lefty">
+      <a href="tel:+34 651-074-590"
+        ><img
+          src="/assets/images/phone_number.png"
+          class="img-fluid"
+          alt="Cerrajeria"
+        />
+      </a>
+      <br /><br />
+    </div>
+
     <div class="col-md">
       <a routerLink="/servicios">
         <img
@@ -73,10 +75,10 @@
   </div>
 </div>
 
-<div *ngIf="!isMobile" class="container text-center">
+<div class="container text-center">
   <a href="tel:+34 651-074-590"
     ><img
-      src="/assets/images/phone_number.png"
+      src="/assets/images/phone_number_2.png"
       class="img-fluid"
       alt="Cerrajeria"
     />
