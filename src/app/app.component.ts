@@ -6,8 +6,6 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "isra1";
-
   onActivate(event) {
     window.scroll(0, 0);
     // or document.body.scrollTop = 0;

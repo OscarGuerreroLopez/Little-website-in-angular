@@ -158,7 +158,7 @@ mat-grid-tile {
 /* resize images */
 .alertMob img {
   width: auto;
-  height: 80%;
+  height: 60%;
 }
 
 .alertMob p {
