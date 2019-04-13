@@ -18,7 +18,7 @@ export class EmailService {
   sendEmail(contact: Contact): Promise<any> {
     return new Promise((resolve, reject) => {
       axios
-        .post("/email", contact)
+        .post("https://www.oscarcomputerguy.com/email", contact)
         .then(response => {
           resolve(response);
         })
