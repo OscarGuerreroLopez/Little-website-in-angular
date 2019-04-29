@@ -10,14 +10,7 @@ import { environment } from "../environments/environment";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    UiModule,
-    ServiceWorkerModule.register("ngsw-worker.js", {
-      enabled: environment.production
-    })
-  ],
+  imports: [BrowserAnimationsModule, AppRoutingModule, UiModule],
   providers: [],
   bootstrap: [AppComponent]
 })
